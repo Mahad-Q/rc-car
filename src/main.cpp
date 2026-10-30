@@ -1,29 +1,19 @@
 #include <Arduino.h>
-
-void data_setup();
-void data_loop();
+#include "controller.h"
 
 void setup() {
-  data_setup();
+  Serial.begin(115200); // Starts communication between the ESP32 and computer at 115200 bits/sec (standardish rate)
+  initializeController();
 }
 
-void loop() {
-  data_loop();
-}
-/*
-const int LED_PIN = 2;
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(LED_PIN, OUTPUT);
-}
-
-void loop() {
-  digitalWrite(LED_PIN, HIGH);
-  Serial.println("LED on");
-  delay(500);
-  digitalWrite(LED_PIN, LOW);
-  Serial.println("LED off");
+void loop () {
+  updateController();
+  if (isControllerConnected()) {
+    Serial.println("The Xbox Controller has successfully connected!");
+  }
+  else {
+    Serial.println("Waiting for Xbox Controller...");
+  }
   delay(500);
 }
-  */
+
