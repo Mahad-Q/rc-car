@@ -1,5 +1,16 @@
 #include <Arduino.h>
 
+void data_setup();
+void data_loop();
+
+void setup() {
+  data_setup();
+}
+
+void loop() {
+  data_loop();
+}
+/*
 const int LED_PIN = 2;
 
 void setup() {
@@ -15,3 +26,4 @@ void loop() {
   Serial.println("LED off");
   delay(500);
 }
+  */
