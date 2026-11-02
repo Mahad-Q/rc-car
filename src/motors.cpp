@@ -2,14 +2,14 @@
 #include "motors.h"
 
 const int PIN_PWMA = 25; // Pulse Width Modulation	-> Controls motors speed
-const int PIN_AIN1 = 24; // Controls motors direction
-const int PIN_AIN2 = 23; // Controls motors direction
+const int PIN_AIN1 = 27; // Controls motors direction
+const int PIN_AIN2 = 26; // Controls motors direction
 
-const int PIN_PWMB = 22; 
-const int PIN_BIN1 = 21; 
-const int PIN_BIN2 = 20; 
+const int PIN_PWMB = 32; 
+const int PIN_BIN1 = 34; 
+const int PIN_BIN2 = 35; 
 
-const int PIN_STBY = 4; // Turns the motor driver on/off
+const int PIN_STBY = 33; // Turns the motor driver on/off
 
 // Current motor speeds
 int currentLeftSpeed = 0;
@@ -19,13 +19,13 @@ const int SPEED_STEP = 20; // Just a faster way of how much I want the motors to
 
 void motorsBegin() {
     pinMode(25, OUTPUT);
-    pinMode(24, OUTPUT);
-    pinMode(23, OUTPUT);
-    pinMode(22, OUTPUT);
-    pinMode(21, OUTPUT);
-    pinMode(20, OUTPUT);
+    pinMode(27, OUTPUT);
+    pinMode(26, OUTPUT);
+    pinMode(32, OUTPUT);
+    pinMode(34, OUTPUT);
+    pinMode(35, OUTPUT);
 
-    pinMode(4, OUTPUT);
+    pinMode(33, OUTPUT);
 
     digitalWrite(PIN_STBY, HIGH);
 
