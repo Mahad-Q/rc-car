@@ -16,6 +16,18 @@ void updateController() {
         // Read the latest Xbox controller inputs.
         controller.read(&controllerState);
 
+        Serial.print("Left Stick X: ");
+        Serial.print(controllerState.leftStickX);
+
+        Serial.print(" | Right Trigger: ");
+        Serial.print(controllerState.rightTrigger);
+
+        Serial.print(" | Left Trigger: ");
+        Serial.print(controllerState.leftTrigger);
+
+        Serial.print(" | B Button: ");
+        Serial.println(controllerState.buttonB);
+
         // Press B to brake immediately.
         if (controllerState.buttonB) {
             brakeMotors();
