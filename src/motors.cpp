@@ -6,8 +6,8 @@ const int PIN_AIN1 = 27; // Controls motors direction
 const int PIN_AIN2 = 26; // Controls motors direction
 
 const int PIN_PWMB = 32; 
-const int PIN_BIN1 = 34; 
-const int PIN_BIN2 = 35; 
+const int PIN_BIN1 = 19; 
+const int PIN_BIN2 = 18; 
 
 const int PIN_STBY = 33; // Turns the motor driver on/off
 
@@ -22,8 +22,8 @@ void motorsBegin() {
     pinMode(27, OUTPUT);
     pinMode(26, OUTPUT);
     pinMode(32, OUTPUT);
-    pinMode(34, OUTPUT);
-    pinMode(35, OUTPUT);
+    pinMode(19, OUTPUT);
+    pinMode(18, OUTPUT);
 
     pinMode(33, OUTPUT);
 
