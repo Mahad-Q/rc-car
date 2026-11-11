@@ -6,18 +6,17 @@ This is an early prototype, so things change often.
 
 ## What works so far
 
-- ESP32 set up with PlatformIO in VS Code (blink test uploaded)
+- ESP32 set up with PlatformIO in VS Code
 - Drive motors purchased
-- First design: car-style layout, rear-wheel drive 
+- First design: car-style layout, rear-wheel drive with front wheels
 - Manual control scheme planned: right trigger forward, left trigger reverse, B to brake, with an arming step before it moves
 
-Here are two photos of the prototype:
-   ![First chassis prototype image 1](images/rover-v1.jpeg) 
-   ![First chassis prototype image 2](images/rover2-v1.jpeg)
+![Click here to see the image of the first prototype](images/rover1-v1.jpeg)
 
 ## Currently working on
 
-- New chassis design in SolidWorks
+- New chassis design and 3D-printed parts in SolidWorks
+- Servo-steering mechanism for the front wheels
 - More sensors (thermal, ambient temperature, humidity so far)
 - Making it autonomous
 
